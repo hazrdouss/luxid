@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+body > main > section {
+    @apply min-h-svh w-full flex flex-col items-center justify-center;
+}

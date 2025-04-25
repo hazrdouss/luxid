@@ -1,0 +1,17 @@
+---
+// layout imports
+import Head from "../layouts/MainHead.astro";
+const { bodyClasses, mainClasses, title, description } = Astro.props;
+---
+
+<html data-theme="dark" lang="en">
+<Head {title} />
+<body class:list={[bodyClasses, `relative bg-black text-white`]}>
+<main class:list={[mainClasses]}>
+    <slot></slot>
+</main>
+<script>
+   import "../scripts/smoothScroll";
+</script>
+</body>
+</html>
